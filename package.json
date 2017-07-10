@@ -28,6 +28,7 @@
     "defaults": "^1.0.3",
     "email-regex": "^1.0.0",
     "ent": "^2.2.0",
+    "escape-string-regexp": "^1.0.5",
     "phone-regex": "^2.0.0",
     "stopword": "^0.1.6",
     "striptags": "^3.0.1",
