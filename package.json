@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ajgamble-milner@bitbucket.org/ajgamble-milner/text-cleaner.git"
+    "url": "git+https://github.com/ajgamble-milner/text-cleaner.git"
   },
   "keywords": [
     "text",
@@ -19,7 +19,7 @@
   ],
   "author": "Aimee Gamble-Milner <aimee.gamble@gmail.com>",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/ajgamble-milner/text-cleaner#readme",
+  "homepage": "https://github.com/ajgamble-milner/text-cleaner",
   "devDependencies": {
     "chai": "^4.0.2"
   },
