@@ -1,6 +1,6 @@
 {
   "name": "text-cleaner",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Easily clean text for analysis",
   "main": "index.js",
   "scripts": {
