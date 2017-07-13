@@ -20,13 +20,16 @@ TextCleaner('Some <b>  TEXT to Clean</b>').removeHtml().condense().toLowerCase()
 ## Usage
 
 ### Constructor: TextCleaner(*string*)
-
+```javascript
+const cleanString = TextCleaner('string');
+```
 Returns an object, with the following methods:
 
 ### #valueOf()
+Returns the current working value of the string being cleaned
 ```javascript
-TextCleaner('STRING').toLowerCase().valueOf()
-// "string"
+TextCleaner('STRING').valueOf()
+// "STRING"
 ```
 
 ### #length
@@ -91,11 +94,38 @@ TextCleaner('<b>string<lb>').stripHtml().valueOf()
 ```
 
 ### #removeChars(*options*)
-Remove all non-alpha charachters, including numbers
-options *object*:
-- replaceWith (*default: ""*) Character to replace matched charcters with.
+Remove all non-alpha characters, including numbers. Only letters, white space and characters specified in the exclude option will not be removed.
+
+Options (*object*):
+- replaceWith (*default: ""*) Character to replace matched characters with. Allows for characters to be replaced by a space, preventing words from merging on character removal.
 - exclude: (*default: ""*) String of characters to exclude. These are added to a regular expression; e.g. "0-9" would exclude numbers from replacement
 ```javascript
 TextCleaner('~string1!').removeChars({ exclude: '!' }).valueOf()
 // "string!"
+```
+
+### #removeApostrophies()
+Remove apostrophes from the text, but leave other single quotes in the text.
+```javascript
+TextCleaner("a quote: 'he didn't'").removeApostrophies().valueOf()
+// "a quote: 'he didnt'"
+```
+Allows words containing apostrophes to be treated separately to `removeChars()`, such as when replacing characters with a space with `removeChars({ replaceWith: ' ' })`, preserving the word.
+
+```javascript
+/* undesired behaviour */
+TextCleaner("don't(text)").removeChars({ replaceWith: ' ' }).valueOf()
+// "don t text"
+
+/* desired behaviour */
+TextCleaner("don't(text)").removeApostrophies().removeChars({ replaceWith: ' ' }).valueOf()
+// "dont text"
+```
+
+### #removeStopWords()
+Remove common stop words from the text for textual/sentiment anlysis. Uses [stopword](https://www.npmjs.com/package/stopword).
+
+```javascript
+TextCleaner("the test string with some words").removeApostrophies().valueOf()
+// "test string words"
 ```
