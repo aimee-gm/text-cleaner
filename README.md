@@ -2,6 +2,10 @@
 
 A small tool for easily cleaning text.
 
+[![npm version](https://badge.fury.io/js/text-cleaner.svg)](https://badge.fury.io/js/text-cleaner)
+[![Build Status](https://travis-ci.org/ajgamble-milner/text-cleaner.svg?branch=master)](https://travis-ci.org/ajgamble-milner/text-cleaner)
+[![Coverage Status](https://coveralls.io/repos/github/ajgamble-milner/text-cleaner/badge.svg?branch=master)](https://coveralls.io/github/ajgamble-milner/text-cleaner?branch=master)
+
 ## Installation
 
 ```javascript
@@ -126,6 +130,6 @@ TextCleaner("don't(text)").removeApostrophies().removeChars({ replaceWith: ' ' }
 Remove common stop words from the text for textual/sentiment anlysis. Uses [stopword](https://www.npmjs.com/package/stopword).
 
 ```javascript
-TextCleaner("the test string with some words").removeApostrophies().valueOf()
+TextCleaner("the test string with some words").removeStopWords().valueOf()
 // "test string words"
 ```
