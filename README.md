@@ -5,6 +5,8 @@ A small tool for easily cleaning text.
 [![npm version](https://badge.fury.io/js/text-cleaner.svg)](https://badge.fury.io/js/text-cleaner)
 [![Build Status](https://travis-ci.org/ajgamble-milner/text-cleaner.svg?branch=master)](https://travis-ci.org/ajgamble-milner/text-cleaner)
 [![Coverage Status](https://coveralls.io/repos/github/ajgamble-milner/text-cleaner/badge.svg?branch=master)](https://coveralls.io/github/ajgamble-milner/text-cleaner?branch=master)
+[![David](https://img.shields.io/david/ajgamble-milner/text-cleaner.svg)](https://david-dm.org/ajgamble-milner/text-cleaner/)
+[![David](https://img.shields.io/david/dev/ajgamble-milner/text-cleaner.svg)](https://david-dm.org/ajgamble-milner/text-cleaner/?type=dev)
 
 ## Installation
 
