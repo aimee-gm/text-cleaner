@@ -1,0 +1,13 @@
+{
+    "extends": "airbnb-base",
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "rules": {
+        "semi": ["error", "always"],
+        "one-var": ["error", "always"],
+        "indent": ["error", "tab"],
+        "no-tabs": 0
+    }
+}
