@@ -1,0 +1,3 @@
+lsnguage: node_js
+node_js:
+    - '7.10'
