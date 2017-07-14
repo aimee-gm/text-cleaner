@@ -21,7 +21,8 @@
   "license": "MIT",
   "homepage": "https://github.com/ajgamble-milner/text-cleaner",
   "devDependencies": {
-    "chai": "^4.0.2"
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   },
   "dependencies": {
     "anglicize": "^1.0.0",
