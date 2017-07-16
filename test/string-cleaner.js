@@ -156,23 +156,23 @@ describe('StringCleaner', () => {
 		});
 	});
 
-	describe('removeApostrophies()', () => {
+	describe('removeApostrophes()', () => {
 		it('should remove apostrophies from inside words', () => {
 			['\'', '`', '’'].forEach((a) => {
 				const testString = new StringCleaner(`relax, don${a}t do it`);
-				testString.removeApostrophies();
+				testString.removeApostrophes();
 				expect(testString.valueOf()).to.equal('relax, dont do it');
 			});
 		});
 
 		it('should not remove apostrophies from quotes', () => {
 			const testString = new StringCleaner('he said \'relax\'');
-			testString.removeApostrophies();
+			testString.removeApostrophes();
 			expect(testString.valueOf()).to.equal('he said \'relax\'');
 		});
 
 		it('should be chainable', () => {
-			expect(test1.removeApostrophies()).to.equal(test1);
+			expect(test1.removeApostrophes()).to.equal(test1);
 		});
 	});
 
