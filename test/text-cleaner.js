@@ -39,7 +39,7 @@ describe('TextCleaner', () => {
 				.stripHtml()
 				// remove apostrophies in words to preserve them as we will be
 				// replacing when with spaces later
-				.removeApostrophies()
+				.removeApostrophes()
 				// remove non-hyphen dash, preserve hyphenated words
 				.removeDashes()
 				// dont remove dashes, we have already dealt with them.

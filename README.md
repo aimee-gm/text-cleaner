@@ -10,7 +10,7 @@ A small tool for easily cleaning text.
 
 ## Installation
 
-```javascript
+```
 npm install text-cleaner --save
 ```
 
@@ -110,21 +110,21 @@ TextCleaner('~string1!').removeChars({ exclude: '!' }).valueOf()
 // "string!"
 ```
 
-### #removeApostrophies()
+### #removeApostrophes()
 Remove apostrophes from the text, but leave other single quotes in the text.
 ```javascript
-TextCleaner("a quote: 'he didn't'").removeApostrophies().valueOf()
+TextCleaner("a quote: 'he didn't'").removeApostrophes().valueOf()
 // "a quote: 'he didnt'"
 ```
 Allows words containing apostrophes to be treated separately to `removeChars()`, such as when replacing characters with a space with `removeChars({ replaceWith: ' ' })`, preserving the word.
 
 ```javascript
 /* undesired behaviour */
-TextCleaner("don't(text)").removeChars({ replaceWith: ' ' }).valueOf()
+TextCleaner("don't(text)").removeChars({ replaceWith: ' ' }).trim().valueOf()
 // "don t text"
 
 /* desired behaviour */
-TextCleaner("don't(text)").removeApostrophies().removeChars({ replaceWith: ' ' }).valueOf()
+TextCleaner("don't(text)").removeApostrophes().removeChars({ replaceWith: ' ' }).trim().valueOf()
 // "dont text"
 ```
 
