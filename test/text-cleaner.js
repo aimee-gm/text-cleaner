@@ -1,11 +1,11 @@
-'use strict';
+
 
 const StringCleaner = require('../lib/string-cleaner'),
 	TextCleaner = require('../index'),
-	expect = require('chai').expect;
+	expect = require('chai').expect,
+	testStrings = require('./data/test-strings.json');
 
 describe('TextCleaner', () => {
-
 	it('should be a function', () => {
 		expect(TextCleaner).to.be.a('function');
 	});
@@ -30,19 +30,20 @@ describe('TextCleaner', () => {
 		expect(TextCleaner(str).valueOf()).to.equal(str);
 	});
 
-	it("should clean complex text when methods are chained", () => {
-
-		require('./data/test-strings.json').forEach(test => {
+	it('should clean complex text when methods are chained', () => {
+		testStrings.forEach((test) => {
 			const result = TextCleaner(test.input)
 				// convert html entities to charachters
 				.decodeHtmlEntities()
 				// remove all html
 				.stripHtml()
-				// remove apostrophies in words to preserve them as we will be replacing when with spaces later
-				.removeApostrophies()
+				// remove apostrophies in words to preserve them as we will be
+				// replacing when with spaces later
+				.removeApostrophes()
 				// remove non-hyphen dash, preserve hyphenated words
 				.removeDashes()
-				// dont remove dashes, we have already dealt with them. Replace all characters with a space to prevent words merging
+				// dont remove dashes, we have already dealt with them.
+				// Replace all characters with a space to prevent words merging
 				.removeChars({ exclude: '-', replaceWith: ' ' })
 				// compact all whitespace down to a single charachter
 				.condense()
@@ -53,8 +54,6 @@ describe('TextCleaner', () => {
 				// Sting.prototype.toLowerCase()
 				.toLowerCase();
 			expect(result.valueOf()).to.equal(test.output);
-		})
-
+		});
 	});
-
-})
+});

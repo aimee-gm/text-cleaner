@@ -5,10 +5,12 @@ A small tool for easily cleaning text.
 [![npm version](https://badge.fury.io/js/text-cleaner.svg)](https://badge.fury.io/js/text-cleaner)
 [![Build Status](https://travis-ci.org/ajgamble-milner/text-cleaner.svg?branch=master)](https://travis-ci.org/ajgamble-milner/text-cleaner)
 [![Coverage Status](https://coveralls.io/repos/github/ajgamble-milner/text-cleaner/badge.svg?branch=master)](https://coveralls.io/github/ajgamble-milner/text-cleaner?branch=master)
+[![David](https://img.shields.io/david/ajgamble-milner/text-cleaner.svg)](https://david-dm.org/ajgamble-milner/text-cleaner/)
+[![David](https://img.shields.io/david/dev/ajgamble-milner/text-cleaner.svg)](https://david-dm.org/ajgamble-milner/text-cleaner/?type=dev)
 
 ## Installation
 
-```javascript
+```
 npm install text-cleaner --save
 ```
 
@@ -108,21 +110,21 @@ TextCleaner('~string1!').removeChars({ exclude: '!' }).valueOf()
 // "string!"
 ```
 
-### #removeApostrophies()
+### #removeApostrophes()
 Remove apostrophes from the text, but leave other single quotes in the text.
 ```javascript
-TextCleaner("a quote: 'he didn't'").removeApostrophies().valueOf()
+TextCleaner("a quote: 'he didn't'").removeApostrophes().valueOf()
 // "a quote: 'he didnt'"
 ```
 Allows words containing apostrophes to be treated separately to `removeChars()`, such as when replacing characters with a space with `removeChars({ replaceWith: ' ' })`, preserving the word.
 
 ```javascript
 /* undesired behaviour */
-TextCleaner("don't(text)").removeChars({ replaceWith: ' ' }).valueOf()
+TextCleaner("don't(text)").removeChars({ replaceWith: ' ' }).trim().valueOf()
 // "don t text"
 
 /* desired behaviour */
-TextCleaner("don't(text)").removeApostrophies().removeChars({ replaceWith: ' ' }).valueOf()
+TextCleaner("don't(text)").removeApostrophes().removeChars({ replaceWith: ' ' }).trim().valueOf()
 // "dont text"
 ```
 
