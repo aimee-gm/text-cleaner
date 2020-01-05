@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "10"
+scripts:
+  - npm run test
+  - npm run lint
+after_success: npm run coverage
+notifications:
+  email: false

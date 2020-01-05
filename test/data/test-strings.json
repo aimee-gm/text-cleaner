@@ -1,0 +1,14 @@
+[
+	{
+		"input": "<span class=\"source js\"><span class=\"storage type js\"><span>var</span></span><span>&nbsp;decode&nbsp;</span><span class=\"keyword operator assignment js\"><span>=</span></span><span>&nbsp;</span><span class=\"meta function-call js\"><span class=\"support function js\"><span>require</span></span><span class=\"meta js\"><span class=\"punctuation definition begin round js\"><span>(</span></span><span class=\"string quoted single js\"><span class=\"punctuation definition string begin js\"><span>'</span></span><span>decode-html</span><span class=\"punctuation definition string end js\"><span>'</span></span></span><span class=\"punctuation definition end round js\"><span>)</span></span></span></span><span class=\"punctuation terminator statement js\"><span>;</span></span></span>",
+		"output": "var decode require decode-html"
+	},
+	{
+		"input": "# What will be the value printed by the following code block?\na, *b, c = (1, 2, 3, 4, 5)\nprint(b) ",
+		"output": "will value printed following code block b c print b"
+	},
+	{
+		"input": "'&lt;div class=\"hidden\"&gt;ONLY&amp;PICKLE&apos;s&lt;/div&gt;'",
+		"output": "pickles"
+	}
+]
