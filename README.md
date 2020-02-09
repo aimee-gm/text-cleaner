@@ -16,7 +16,7 @@ npm install text-cleaner --save
 ```javascript
 const TextCleaner = require('text-cleaner');
 
-TextCleaner('Some <b>  TEXT to Clean</b>').removeHtml().condense().toLowerCase().valueOf();
+TextCleaner('Some <b>  TEXT to Clean</b>').stripHtml().condense().toLowerCase().valueOf();
 // some text to clean
 ```
 
