@@ -25,13 +25,13 @@
   "homepage": "https://github.com/ajgamble-milner/text-cleaner",
   "devDependencies": {
     "chai": "^4.2.0",
-    "coveralls": "^3.0.7",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "mocha": "^6.2.2",
-    "npm-check-updates": "^3.2.1",
-    "nyc": "^14.1.1"
+    "coveralls": "^3.0.11",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "mocha": "^7.1.1",
+    "npm-check-updates": "^4.1.1",
+    "nyc": "^15.0.0"
   },
   "dependencies": {
     "anglicize": "^1.0.0",
@@ -40,7 +40,7 @@
     "ent": "^2.2.0",
     "escape-string-regexp": "^2.0.0",
     "phone-regex": "^2.1.0",
-    "stopword": "^0.3.4",
+    "stopword": "^1.0.0",
     "striptags": "^3.1.1"
   }
 }
