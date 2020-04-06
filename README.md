@@ -28,10 +28,12 @@ const cleanString = TextCleaner('string');
 ```
 Returns an object, with the following methods:
 
-### #valueOf()
+### #valueOf() and #toString()
 Returns the current working value of the string being cleaned
 ```javascript
 TextCleaner('STRING').valueOf()
+// "STRING"
+TextCleaner('STRING').toString()
 // "STRING"
 ```
 

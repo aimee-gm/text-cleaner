@@ -37,6 +37,13 @@ describe('StringCleaner', () => {
 		});
 	});
 
+	describe('get s() and toString()', () => {
+		it('should return the stored string', () => {
+			expect(test1.s).to.equal(test1.toString()).to.equal('test');
+			expect(test2.s).to.equal(test2.toString()).to.equal('abcdefg');
+		});
+	});
+
 	describe('get length()', () => {
 		it('should return the length of the string', () => {
 			expect(test1.length).to.equal(4);
