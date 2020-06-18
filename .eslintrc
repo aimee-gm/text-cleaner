@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb-base",
+  "extends": ["airbnb-base", "prettier"],
   "env": {
     "node": true,
     "es6": true
@@ -7,7 +7,6 @@
   "rules": {
     "semi": ["error", "always"],
     "one-var": 0,
-    "indent": ["error", "tab"],
-    "no-tabs": 0
+    "prefer-object-spread": "off"
   }
 }
