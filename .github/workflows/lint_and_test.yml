@@ -17,6 +17,8 @@ jobs:
           node-version: 12
       - name: Install dependencies
         run: yarn
+      - name: Prettier
+        run: yarn prettier:list
       - name: Lint code
         run: yarn lint
   test:

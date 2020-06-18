@@ -3,12 +3,9 @@
   "version": "1.1.0",
   "description": "Easily clean text for analysis",
   "main": "index.js",
-  "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha",
-    "lint": "eslint .",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "update": "ncu -u"
-  },
+  "author": "Aimee Gamble-Milner",
+  "license": "MIT",
+  "homepage": "https://github.com/ajgamble-milner/text-cleaner",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aimee-gm/text-cleaner.git"
@@ -20,26 +17,39 @@
     "strip",
     "remove"
   ],
-  "author": "Aimee Gamble-Milner",
-  "license": "MIT",
-  "homepage": "https://github.com/ajgamble-milner/text-cleaner",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "coveralls": "^3.0.11",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "mocha": "^8.0.1",
-    "nyc": "^15.0.0"
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "lint": "eslint .",
+    "prettier:list": "prettier -l **/*.js"
   },
   "dependencies": {
     "anglicize": "^1.0.0",
-    "defaults": "^1.0.3",
     "email-regex": "^4.0.0",
     "ent": "^2.2.0",
     "escape-string-regexp": "^4.0.0",
     "phone-regex": "^2.1.0",
     "stopword": "^1.0.0",
     "striptags": "^3.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "mocha": "^8.0.1",
+    "nyc": "^15.0.0",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
