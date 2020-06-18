@@ -3392,9 +3392,9 @@ ssri@^8.0.0:
     minipass "^3.1.1"
 
 stopword@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stopword/-/stopword-1.0.0.tgz#8b81f589c48f12e8f25e725e9b93e13b973e388c"
-  integrity sha512-p71C4/tRf3ilqsr7jfW61CZUbQnOqQCgehjwdhTa+LfsJDLOcHdzG/opyDk8trT92b8NjhvOFSHbVCeYbIgdLQ==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/stopword/-/stopword-1.0.1.tgz#b91f873c9d3e870af47189c84423eb0280e9dfbc"
+  integrity sha512-mcBsIyr5/cJ0QMlXd8P5vtFyvHPTP8m9mOs8OCu84uAOc9QVRpBUz9KhHu0T5rZDycu5NvHSu3/m1Qz7m2ZCiw==
 
 "string-width@^1.0.2 || 2":
   version "2.1.1"
