@@ -22,6 +22,10 @@
     "lint": "eslint .",
     "prettier:list": "prettier -l **/*.js"
   },
+  "files": [
+    "/lib",
+    "/index.js"
+  ],
   "dependencies": {
     "anglicize": "^1.0.0",
     "email-regex": "^4.0.0",
