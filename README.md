@@ -67,7 +67,7 @@ TextCleaner('STRING').toLowerCase().valueOf()
 // "string"
 ```
 
-### #toUpperrCase()
+### #toUpperCase()
 ```javascript
 TextCleaner('string').toUpperCase().valueOf()
 // "STRING"
