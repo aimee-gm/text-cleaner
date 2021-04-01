@@ -2257,9 +2257,9 @@ sprintf-js@~1.0.2:
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 stopword@^1.0.0:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/stopword/-/stopword-1.0.6.tgz#404944f0b756583d9194d2ad81bd7cdedc4d2a56"
-  integrity sha512-8ff3zaY1mLOQGSL/lzl9K6nMHbpFEalscwBtTbh8hWjPbkyPcntr25+PVB251xWGX1rUjDLzPWIw38ZcKJ+GAw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/stopword/-/stopword-1.0.7.tgz#927c8c7e038c38b62c96855493a305a16a6c4dc7"
+  integrity sha512-KKPM5LGeulAxoNrg384AfNSoUvphG87sgj/vTHOkJ5M5U7hO99XA6Sl0HBhtCBv17Tv3kQPLj+5fCt7cadjXWQ==
 
 string-argv@0.3.1:
   version "0.3.1"
