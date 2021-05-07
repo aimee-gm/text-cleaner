@@ -20,7 +20,8 @@
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha",
     "lint": "eslint .",
-    "prettier:list": "prettier -l **/*.js"
+    "prettier:list": "prettier '**/*.{js,svg,md,yaml,yml}' -l",
+    "prettier:fix": "prettier '**/*.{js,svg,md,yaml,yml}' --write"
   },
   "files": [
     "/lib",
