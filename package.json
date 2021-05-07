@@ -31,7 +31,7 @@
     "anglicize": "^1.0.0",
     "email-regex": "^4.0.0",
     "ent": "^2.2.0",
-    "escape-string-regexp": "^4.0.0",
+    "escape-string-regexp": "^5.0.0",
     "phone-regex": "^2.1.0",
     "stopword": "^1.0.0",
     "striptags": "^3.1.1"
