@@ -3,3 +3,12 @@ node_modules
 coverage
 .DS_Store
 .eslintcache
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
