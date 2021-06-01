@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "anglicize": "^1.0.0",
-    "email-regex": "^4.0.0",
+    "email-regex": "^5.0.0",
     "ent": "^2.2.0",
     "escape-string-regexp": "^4.0.0",
     "phone-regex": "^2.1.0",
