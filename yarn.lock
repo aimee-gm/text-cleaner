@@ -1213,14 +1213,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.1.0":
-  version: 8.3.0
-  resolution: "eslint-config-prettier@npm:8.3.0"
+"eslint-config-prettier@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "eslint-config-prettier@npm:9.0.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 94ccbb50fb67e5e47e8ba6cfa257b5cbf53619990ab13f46b99518cfe9b900394b93bdf6ffedbde1a8e2997d301b0fbd73a6b4202146bc53475dfb30a8c812f2
+  checksum: 6d05431ac791e96706b6565db2fa6b492ecec4f1fc6946116f118af5949cbc25681d6f81624e7f34d864bf56e74f570d3d5de07d9bc233c7e99d96d7c5bfe63a
   languageName: node
   linkType: hard
 
@@ -3890,7 +3890,7 @@ fsevents@~2.1.2:
     escape-string-regexp: ^4.0.0
     eslint: ^7.3.1
     eslint-config-airbnb-base: ^14.1.0
-    eslint-config-prettier: ^8.1.0
+    eslint-config-prettier: ^9.0.0
     eslint-plugin-import: ^2.20.2
     husky: ">=4"
     lint-staged: ">=10"
