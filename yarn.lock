@@ -3629,10 +3629,10 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"stopword@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "stopword@npm:1.0.1"
-  checksum: b36e8443cf5ab8b805d87bbba9528f821936311838ad282935cb6a750d82301ef0eebc11136d46b23c586efdd152825f7e6569994d58803769f35c2b803c888e
+"stopword@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "stopword@npm:2.0.8"
+  checksum: 52769e3a2bdbf297ff189d282839487c66a1d3cb684ac5aae4c7c9535ed84d59eb8b2357634ef0f13ce7cd34a2312a28de0da16acb529566fb5528f9e6da9b7c
   languageName: node
   linkType: hard
 
@@ -3898,7 +3898,7 @@ fsevents@~2.1.2:
     nyc: ^15.0.0
     phone-regex: ^2.1.0
     prettier: ^2.0.5
-    stopword: ^1.0.0
+    stopword: ^2.0.8
     striptags: ^3.1.1
   languageName: unknown
   linkType: soft
